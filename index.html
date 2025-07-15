@@ -1,0 +1,827 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SewinxDesign</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="styles.css">
+        <script src="javas.js"></script>
+        <script src="vercel.json"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body class="bg-gradient-to-br from-indigo-50 to-purple-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-600 playfair">Sewinx<span class="text-purple-600">Design</span></a>
+            
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link font-medium hover:text-indigo-600 transition-colors">Home</a>
+                <a href="#about" class="nav-link font-medium hover:text-indigo-600 transition-colors">About</a>
+                <a href="#services" class="nav-link font-medium hover:text-indigo-600 transition-colors">Services</a>
+                <a href="#portfolio" class="nav-link font-medium hover:text-indigo-600 transition-colors">Portfolio</a>
+                <a href="#contact" class="nav-link font-medium hover:text-indigo-600 transition-colors">Contact</a>
+            </div>
+            
+            <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white w-full border-t">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-3">
+                <a href="#home" class="py-2 hover:text-indigo-600 transition-colors">Home</a>
+                <a href="#about" class="py-2 hover:text-indigo-600 transition-colors">About</a>
+                <a href="#services" class="py-2 hover:text-indigo-600 transition-colors">Services</a>
+                <a href="#portfolio" class="py-2 hover:text-indigo-600 transition-colors">Portfolio</a>
+                <a href="#contact" class="py-2 hover:text-indigo-600 transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-28 pb-20 md:pt-40 md:pb-32">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 playfair leading-tight">
+                        Crafting Digital <span class="text-indigo-600">Experiences</span> &amp; Visual <span class="text-purple-600">Stories</span>
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 max-w-lg">
+                        Hi, I'm Taha. I transform ideas into engaging web experiences and compelling visual designs that help brands stand out.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#portfolio" class="px-8 py-3 bg-indigo-600 text-white rounded-full font-medium hover:bg-indigo-700 transition-colors shadow-lg hover:shadow-xl">
+                            View My Work
+                        </a>
+                        <a href="#contact" class="px-8 py-3 border-2 border-indigo-600 text-indigo-600 rounded-full font-medium hover:bg-indigo-50 transition-colors">
+                            Let's Talk
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <!-- Designer illustration -->
+                         <!--<svg class="#" viewBox="0 0 600 500" xmlns="http://www.w3.org/2000/svg">-->
+                            <img src="img/taha.png" alt="Designer Illustration" >
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold playfair mb-4">About <span class="text-indigo-600">Me</span></h2>
+                <div class="w-20 h-1 bg-indigo-600 mx-auto"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-2/5">
+                    <div class="relative">
+                        <div class="w-full h-80 md:h-96 bg-indigo-100 rounded-lg overflow-hidden">
+                            <!-- Designer profile illustration -->
+                            <svg class="w-full h-full" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="400" height="400" fill="#EEF2FF"></rect>
+                                
+                                <!-- Abstract background elements -->
+                                <circle cx="50" cy="50" r="30" fill="#C7D2FE"></circle>
+                                <circle cx="350" cy="350" r="40" fill="#DDD6FE"></circle>
+                                <rect x="300" y="50" width="50" height="50" rx="10" fill="#E0E7FF"></rect>
+                                <rect x="50" y="300" width="60" height="60" rx="10" fill="#EDE9FE"></rect>
+                                
+                                <!-- Stylized person -->
+                                <circle cx="200" cy="150" r="60" fill="#6366F1"></circle>
+                                <rect x="140" y="210" width="120" height="140" rx="20" fill="#4F46E5"></rect>
+                                <rect x="160" y="350" width="30" height="50" fill="#4F46E5"></rect>
+                                <rect x="210" y="350" width="30" height="50" fill="#4F46E5"></rect>
+                                
+                                <!-- Design elements the person is holding -->
+                                <circle cx="120" cy="230" r="15" fill="#F472B6"></circle>
+                                <rect x="250" y="220" width="30" height="30" rx="5" fill="#818CF8"></rect>
+                                <polygon points="140,270 170,290 140,310" fill="#C084FC"></polygon>
+                            </svg>
+                        </div>
+                        <div class="absolute -bottom-5 -right-5 w-24 h-24 bg-indigo-600 rounded-lg flex items-center justify-center text-white">
+                            <div>
+                                <p class="text-2xl font-bold">2+</p>
+                                <p class="text-xs">Years of Experience</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-3/5 mt-10 md:mt-0">
+                    <h3 class="text-2xl font-semibold mb-4">Web Designer &amp; Graphic Designer</h3>
+                    <p class="text-gray-600 mb-6">
+                        I'm a passionate designer with over 2 years of experience creating beautiful, functional websites and compelling visual designs. My approach combines creativity with strategic thinking to deliver solutions that not only look great but also achieve business goals.
+                    </p>
+                    <p class="text-gray-600 mb-8">
+                        I believe in the power of design to solve problems, tell stories, and create meaningful connections between brands and their audiences. Every project is an opportunity to create something unique that stands out in today's crowded digital landscape.
+                    </p>
+                    
+                    <div class="mb-8">
+                        <h4 class="text-lg font-semibold mb-4">My Skills</h4>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="skill-pill px-4 py-2 bg-indigo-100 text-indigo-700 rounded-full text-sm font-medium">UI/UX Design</span>
+                            <span class="skill-pill px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Web Development</span>
+                            <span class="skill-pill px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">Responsive Design</span>
+                            <span class="skill-pill px-4 py-2 bg-pink-100 text-pink-700 rounded-full text-sm font-medium">Brand Identity</span>
+                            <span class="skill-pill px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">Adobe Creative Suite</span>
+                            <span class="skill-pill px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">Figma</span>
+                            <span class="skill-pill px-4 py-2 bg-red-100 text-red-700 rounded-full text-sm font-medium">Illustration</span>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="inline-block px-8 py-3 bg-indigo-600 text-white rounded-full font-medium hover:bg-indigo-700 transition-colors shadow-md">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-indigo-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold playfair mb-4">My <span class="text-indigo-600">Services</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">I offer comprehensive design solutions to help your brand stand out and connect with your audience.</p>
+                <div class="w-20 h-1 bg-indigo-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-desktop text-2xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Web Design</h3>
+                    <p class="text-gray-600 mb-4">
+                        Creating beautiful, functional websites that provide an exceptional user experience and help achieve your business goals.
+                    </p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Responsive layouts
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            User-centered design
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Interactive prototypes
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-paint-brush text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Graphic Design</h3>
+                    <p class="text-gray-600 mb-4">
+                        Crafting visually compelling designs that communicate your message effectively and strengthen your brand identity.
+                    </p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Brand identity
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Marketing materials
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Social media graphics
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-mobile-alt text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">UI/UX Design</h3>
+                    <p class="text-gray-600 mb-4">
+                        Designing intuitive user interfaces and seamless experiences that keep users engaged and satisfied.
+                    </p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            User research
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Wireframing
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Usability testing
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-pink-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-bullhorn text-2xl text-pink-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Brand Identity</h3>
+                    <p class="text-gray-600 mb-4">
+                        Developing cohesive brand identities that resonate with your target audience and set you apart from competitors.
+                    </p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Logo design
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Color palettes
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Brand guidelines
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-code text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Frontend Development</h3>
+                    <p class="text-gray-600 mb-4">
+                        Bringing designs to life with clean, efficient code that ensures your website performs flawlessly.
+                    </p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            HTML/CSS/JavaScript
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Responsive frameworks
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Performance optimization
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-white rounded-lg p-8 shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-lightbulb text-2xl text-yellow-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Design Consultation</h3>
+                    <p class="text-gray-600 mb-4">
+                        Providing expert advice and strategies to help you make informed design decisions for your business.
+                    </p>
+                    <ul class="text-gray-600 space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Design audits
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Strategy sessions
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check text-green-500 mr-2"></i>
+                            Competitor analysis
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold playfair mb-4">My <span class="text-indigo-600">Portfolio</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">A selection of my recent projects showcasing my design skills and creative approach.</p>
+                <div class="w-20 h-1 bg-indigo-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="mb-10">
+                <div class="flex flex-wrap justify-center gap-4 mb-10">
+                    <button class="filter-btn active px-6 py-2 rounded-full bg-indigo-600 text-white" data-filter="all">All</button>
+                    <button class="filter-btn px-6 py-2 rounded-full bg-gray-200 hover:bg-gray-300 transition-colors" data-filter="web">Web Design</button>
+                    <button class="filter-btn px-6 py-2 rounded-full bg-gray-200 hover:bg-gray-300 transition-colors" data-filter="graphic">Graphic Design</button>
+                    <button class="filter-btn px-6 py-2 rounded-full bg-gray-200 hover:bg-gray-300 transition-colors" data-filter="brand">Branding</button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 portfolio-grid">
+                <!-- Project 1 -->
+                <div class="project-card rounded-lg overflow-hidden shadow-md" data-category="web">
+                    <div class="h-64 bg-indigo-100 relative overflow-hidden">
+                        <!-- Project 1 illustration -->
+                        <svg class="w-full h-full" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#EEF2FF"></rect>
+                            
+                            <!-- Website mockup -->
+                            <rect x="50" y="40" width="300" height="220" rx="5" fill="#4F46E5"></rect>
+                            <rect x="60" y="50" width="280" height="200" rx="3" fill="#F9FAFB"></rect>
+                            
+                            <!-- Header -->
+                            <rect x="60" y="50" width="280" height="40" fill="#6366F1"></rect>
+                            <circle cx="80" cy="70" r="10" fill="white"></circle>
+                            <rect x="100" y="65" width="40" height="10" rx="2" fill="white"></rect>
+                            <rect x="150" y="65" width="40" height="10" rx="2" fill="white"></rect>
+                            <rect x="200" y="65" width="40" height="10" rx="2" fill="white"></rect>
+                            
+                            <!-- Content -->
+                            <rect x="80" y="110" width="100" height="80" rx="3" fill="#E0E7FF"></rect>
+                            <rect x="200" y="110" width="120" height="10" rx="2" fill="#C7D2FE"></rect>
+                            <rect x="200" y="130" width="100" height="10" rx="2" fill="#C7D2FE"></rect>
+                            <rect x="200" y="150" width="80" height="10" rx="2" fill="#C7D2FE"></rect>
+                            <rect x="200" y="170" width="60" height="10" rx="2" fill="#C7D2FE"></rect>
+                            
+                            <!-- Footer -->
+                            <rect x="80" y="210" width="240" height="20" rx="2" fill="#E0E7FF"></rect>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Eco-Friendly E-commerce</h3>
+                        <p class="text-gray-600 mb-4">A responsive website design for a sustainable products store with a clean, modern aesthetic.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-medium">Web Design</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">UI/UX</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-medium">E-commerce</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card rounded-lg overflow-hidden shadow-md" data-category="graphic">
+                    <div class="h-64 bg-purple-100 relative overflow-hidden">
+                        <!-- Project 2 illustration -->
+                        <svg class="w-full h-full" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#F3E8FF"></rect>
+                            
+                            <!-- Poster design -->
+                            <rect x="100" y="50" width="200" height="200" fill="#A855F7"></rect>
+                            <circle cx="200" cy="100" r="30" fill="#F9FAFB"></circle>
+                            <rect x="150" y="150" width="100" height="10" rx="2" fill="white"></rect>
+                            <rect x="130" y="170" width="140" height="5" rx="1" fill="white"></rect>
+                            <rect x="140" y="185" width="120" height="5" rx="1" fill="white"></rect>
+                            <rect x="160" y="200" width="80" height="20" rx="10" fill="#F9FAFB"></rect>
+                            
+                            <!-- Design elements -->
+                            <circle cx="80" cy="70" r="15" fill="#D8B4FE"></circle>
+                            <rect x="320" y="200" width="30" height="30" rx="5" fill="#D8B4FE"></rect>
+                            <polygon points="70,230 90,200 50,200" fill="#D8B4FE"></polygon>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Music Festival Poster</h3>
+                        <p class="text-gray-600 mb-4">Vibrant poster design for an annual music festival featuring custom illustrations and typography.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-medium">Graphic Design</span>
+                            <span class="px-3 py-1 bg-pink-100 text-pink-700 rounded-full text-xs font-medium">Illustration</span>
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs font-medium">Typography</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card rounded-lg overflow-hidden shadow-md" data-category="brand">
+                    <div class="h-64 bg-blue-100 relative overflow-hidden">
+                        <!-- Project 3 illustration -->
+                        <svg class="w-full h-full" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#DBEAFE"></rect>
+                            
+                            <!-- Brand identity elements -->
+                            <rect x="50" y="50" width="300" height="200" fill="white"></rect>
+                            
+                            <!-- Logo -->
+                            <circle cx="120" cy="100" r="30" fill="#3B82F6"></circle>
+                            <rect x="110" y="90" width="20" height="20" fill="white"></rect>
+                            
+                            <!-- Color palette -->
+                            <rect x="200" y="80" width="30" height="30" fill="#3B82F6"></rect>
+                            <rect x="240" y="80" width="30" height="30" fill="#1E40AF"></rect>
+                            <rect x="280" y="80" width="30" height="30" fill="#BFDBFE"></rect>
+                            
+                            <!-- Typography samples -->
+                            <rect x="200" y="130" width="100" height="10" rx="2" fill="#3B82F6"></rect>
+                            <rect x="200" y="150" width="80" height="5" rx="1" fill="#3B82F6"></rect>
+                            <rect x="200" y="165" width="60" height="5" rx="1" fill="#3B82F6"></rect>
+                            
+                            <!-- Business card mockup -->
+                            <rect x="80" y="160" width="80" height="50" rx="2" fill="#EFF6FF"></rect>
+                            <circle cx="100" cy="175" r="8" fill="#3B82F6"></circle>
+                            <rect x="90" y="190" width="60" height="3" rx="1" fill="#3B82F6"></rect>
+                            <rect x="90" y="198" width="40" height="3" rx="1" fill="#3B82F6"></rect>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Tech Startup Branding</h3>
+                        <p class="text-gray-600 mb-4">Complete brand identity for an innovative tech startup, including logo, color palette, and guidelines.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">Branding</span>
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-medium">Logo Design</span>
+                            <span class="px-3 py-1 bg-sky-100 text-sky-700 rounded-full text-xs font-medium">Identity</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card rounded-lg overflow-hidden shadow-md" data-category="web">
+                    <div class="h-64 bg-green-100 relative overflow-hidden">
+                        <!-- Project 4 illustration -->
+                        <svg class="w-full h-full" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#DCFCE7"></rect>
+                            
+                            <!-- Mobile app mockup -->
+                            <rect x="130" y="30" width="140" height="240" rx="10" fill="#4F46E5"></rect>
+                            <rect x="140" y="40" width="120" height="210" rx="5" fill="#F9FAFB"></rect>
+                            
+                            <!-- App content -->
+                            <rect x="140" y="40" width="120" height="40" rx="5" fill="#22C55E"></rect>
+                            <circle cx="160" cy="60" r="10" fill="white"></circle>
+                            <rect x="180" y="55" width="60" height="10" rx="2" fill="white"></rect>
+                            
+                            <!-- App screens -->
+                            <rect x="150" y="90" width="100" height="70" rx="5" fill="#DCFCE7"></rect>
+                            <rect x="160" y="100" width="80" height="5" rx="1" fill="#22C55E"></rect>
+                            <rect x="160" y="110" width="60" height="5" rx="1" fill="#22C55E"></rect>
+                            <rect x="160" y="120" width="40" height="20" rx="5" fill="#22C55E"></rect>
+                            
+                            <rect x="150" y="170" width="100" height="30" rx="5" fill="#DCFCE7"></rect>
+                            <rect x="150" y="210" width="100" height="30" rx="5" fill="#DCFCE7"></rect>
+                            
+                            <!-- Home button -->
+                            <circle cx="200" cy="235" r="8" stroke="#22C55E" stroke-width="2" fill="none"></circle>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Fitness App UI Design</h3>
+                        <p class="text-gray-600 mb-4">User interface design for a mobile fitness application with intuitive navigation and clean aesthetics.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-medium">Mobile UI</span>
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-medium">App Design</span>
+                            <span class="px-3 py-1 bg-emerald-100 text-emerald-700 rounded-full text-xs font-medium">UX</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card rounded-lg overflow-hidden shadow-md" data-category="graphic">
+                    <div class="h-64 bg-red-100 relative overflow-hidden">
+                        <!-- Project 5 illustration -->
+                        <svg class="w-full h-full" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#FEE2E2"></rect>
+                            
+                            <!-- Magazine spread -->
+                            <rect x="50" y="50" width="300" height="200" fill="white"></rect>
+                            <line x1="200" y1="50" x2="200" y2="250" stroke="#E5E7EB" stroke-width="1"></line>
+                            
+                            <!-- Left page -->
+                            <rect x="70" y="70" width="110" height="80" fill="#FCA5A5"></rect>
+                            <rect x="70" y="160" width="110" height="10" rx="2" fill="#EF4444"></rect>
+                            <rect x="70" y="180" width="90" height="5" rx="1" fill="#4B5563"></rect>
+                            <rect x="70" y="190" width="100" height="5" rx="1" fill="#4B5563"></rect>
+                            <rect x="70" y="200" width="95" height="5" rx="1" fill="#4B5563"></rect>
+                            <rect x="70" y="210" width="80" height="5" rx="1" fill="#4B5563"></rect>
+                            
+                            <!-- Right page -->
+                            <rect x="220" y="70" width="60" height="5" rx="1" fill="#4B5563"></rect>
+                            <rect x="220" y="85" width="110" height="5" rx="1" fill="#4B5563"></rect>
+                            <rect x="220" y="95" width="100" height="5" rx="1" fill="#4B5563"></rect>
+                            <rect x="220" y="105" width="105" height="5" rx="1" fill="#4B5563"></rect>
+                            <rect x="220" y="125" width="110" height="60" fill="#FCA5A5"></rect>
+                            <rect x="220" y="195" width="110" height="5" rx="1" fill="#4B5563"></rect>
+                            <rect x="220" y="205" width="90" height="5" rx="1" fill="#4B5563"></rect>
+                            <rect x="220" y="215" width="100" height="5" rx="1" fill="#4B5563"></rect>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Culinary Magazine Layout</h3>
+                        <p class="text-gray-600 mb-4">Editorial design for a food magazine featuring elegant typography and mouth-watering food photography.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-xs font-medium">Editorial</span>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-medium">Print Design</span>
+                            <span class="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-medium">Typography</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card rounded-lg overflow-hidden shadow-md" data-category="brand">
+                    <div class="h-64 bg-amber-100 relative overflow-hidden">
+                        <!-- Project 6 illustration -->
+                        <svg class="w-full h-full" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="400" height="300" fill="#FEF3C7"></rect>
+                            
+                            <!-- Packaging design -->
+                            <rect x="100" y="50" width="200" height="200" fill="white"></rect>
+                            
+                            <!-- Product box -->
+                            <rect x="150" y="80" width="100" height="140" fill="#F59E0B"></rect>
+                            <rect x="160" y="90" width="80" height="120" fill="#FBBF24"></rect>
+                            
+                            <!-- Logo on packaging -->
+                            <circle cx="200" cy="130" r="20" fill="white"></circle>
+                            <path d="M190,130 L200,120 L210,130 L200,140 Z" fill="#F59E0B"></path>
+                            
+                            <!-- Text elements -->
+                            <rect x="175" y="160" width="50" height="8" rx="2" fill="white"></rect>
+                            <rect x="185" y="175" width="30" height="5" rx="1" fill="white"></rect>
+                            
+                            <!-- Design elements -->
+                            <circle cx="80" cy="80" r="15" fill="#FCD34D"></circle>
+                            <rect x="320" y="200" width="30" height="30" rx="5" fill="#FCD34D"></rect>
+                            <polygon points="70,230 90,200 50,200" fill="#FCD34D"></polygon>
+                        </svg>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Organic Honey Packaging</h3>
+                        <p class="text-gray-600 mb-4">Packaging design for an organic honey brand with a focus on sustainability and natural aesthetics.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-amber-100 text-amber-700 rounded-full text-xs font-medium">Packaging</span>
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs font-medium">Branding</span>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-medium">Product Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-indigo-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold playfair mb-4">Client <span class="text-indigo-600">Testimonials</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">What my clients say about working with me and the results we've achieved together.</p>
+                <div class="w-20 h-1 bg-indigo-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="testimonial-slider relative">
+                <div class="testimonial-wrapper overflow-hidden">
+                    <div class="testimonial-track flex transition-transform duration-300" style="transform: translateX(0%);">
+                        <!-- Testimonial 1 -->
+                        <div class="testimonial-slide w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                            <div class="bg-white rounded-lg p-8 shadow-md h-full">
+                                <div class="flex items-center mb-6">
+                                    <div class="text-yellow-400 flex">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600 mb-6 italic">
+                                    "Working with Alex was a game-changer for our brand. The website design exceeded our expectations and has significantly improved our online presence and customer engagement."
+                                </p>
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center mr-4">
+                                        <span class="text-indigo-600 font-semibold">JD</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold">Jane Doe</h4>
+                                        <p class="text-gray-500 text-sm">CEO, TechStart</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 2 -->
+                        <div class="testimonial-slide w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                            <div class="bg-white rounded-lg p-8 shadow-md h-full">
+                                <div class="flex items-center mb-6">
+                                    <div class="text-yellow-400 flex">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600 mb-6 italic">
+                                    "Alex created a stunning brand identity for our new product line. The attention to detail and creative approach truly captured the essence of our brand. Highly recommended!"
+                                </p>
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                                        <span class="text-purple-600 font-semibold">MS</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold">Michael Smith</h4>
+                                        <p class="text-gray-500 text-sm">Marketing Director, Eco Products</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Testimonial 3 -->
+                        <div class="testimonial-slide w-full md:w-1/2 lg:w-1/3 flex-shrink-0 px-4">
+                            <div class="bg-white rounded-lg p-8 shadow-md h-full">
+                                <div class="flex items-center mb-6">
+                                    <div class="text-yellow-400 flex">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                                <p class="text-gray-600 mb-6 italic">
+                                    "The UI/UX design for our app was exactly what we needed. Alex understood our vision perfectly and delivered a user-friendly interface that our customers love. The project was completed on time and within budget."
+                                </p>
+                                <div class="flex items-center">
+                                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                                        <span class="text-blue-600 font-semibold">SJ</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold">Sarah Johnson</h4>
+                                        <p class="text-gray-500 text-sm">Founder, FitLife App</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="testimonial-prev absolute top-1/2 -left-4 transform -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center text-indigo-600 focus:outline-none z-10 hidden md:flex">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <button class="testimonial-next absolute top-1/2 -right-4 transform -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-md flex items-center justify-center text-indigo-600 focus:outline-none z-10 hidden md:flex">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <div class="testimonial-dots flex justify-center mt-8 space-x-2">
+                <button class="testimonial-dot w-3 h-3 rounded-full bg-indigo-600"></button>
+                <button class="testimonial-dot w-3 h-3 rounded-full bg-indigo-200"></button>
+                <button class="testimonial-dot w-3 h-3 rounded-full bg-indigo-200"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold playfair mb-4">Get In <span class="text-indigo-600">Touch</span></h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Have a project in mind? Let's discuss how I can help bring your vision to life.</p>
+                <div class="w-20 h-1 bg-indigo-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-10">
+                <div class="md:w-1/2">
+                    <div class="bg-indigo-50 rounded-lg p-8 h-full">
+                        <h3 class="text-2xl font-semibold mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-envelope text-indigo-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800 mb-1">Email</h4>
+                                    <p class="text-indigo-600">Tahagmir13@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-phone text-indigo-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800 mb-1">Phone</h4>
+                                    <p class="text-indigo-600">+216 51 166 275</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                                    <i class="fas fa-map-marker-alt text-indigo-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800 mb-1">Location</h4>
+                                    <p class="text-gray-600">Gabes, Tunisia</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--sosial media-->
+                        <div class="mt-10">
+                            <h4 class="font-medium text-gray-800 mb-4">Connect with me</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 hover:bg-indigo-200 transition-colors">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 hover:bg-indigo-200 transition-colors">
+                                    <i class="fab fa-dribbble"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 hover:bg-indigo-200 transition-colors">
+                                    <i class="fab fa-behance"></i>
+                                </a>
+                                <a href="https://www.instagram.com/sewinx.exe/" class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 hover:bg-indigo-200 transition-colors">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <form id="contact-form" class="bg-white rounded-lg p-8 shadow-md">
+                        <h3 class="text-2xl font-semibold mb-6">Send Me a Message</h3>
+                        
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+                            <input type="text" id="name" class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Your name">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Your email">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <input type="text" id="subject" class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Subject">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="message" rows="5" class="contact-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Your message"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full py-3 bg-indigo-600 text-white rounded-lg font-medium hover:bg-indigo-700 transition-colors shadow-md">
+                            Send Message
+                        </button>
+                        
+                        <div id="form-message" class="mt-4 text-center hidden"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-2xl font-bold playfair">Sewinx<span class="text-indigo-400">Design</span></a>
+                    <p class="text-gray-400 mt-2">Creating beautiful digital experiences</p>
+                </div>
+                
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="#home" class="hover:text-indigo-400 transition-colors">Home</a>
+                    <a href="#about" class="hover:text-indigo-400 transition-colors">About</a>
+                    <a href="#services" class="hover:text-indigo-400 transition-colors">Services</a>
+                    <a href="#portfolio" class="hover:text-indigo-400 transition-colors">Portfolio</a>
+                    <a href="#contact" class="hover:text-indigo-400 transition-colors">Contact</a>
+                </div>
+            </div>
+            
+            <hr class="border-gray-800 my-8">
+            
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2023 SewinxDesign. All rights reserved.</p>
+                
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-behance"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button id="scroll-top" class="scroll-top fixed bottom-6 right-6 w-12 h-12 bg-indigo-600 text-white rounded-full flex items-center justify-center shadow-lg z-50">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    <iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+    </body>
+</html>
